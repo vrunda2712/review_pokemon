@@ -1,1 +1,9 @@
 <h1>Pokemon Info</h1>
+
+<h3>There are <%= @pokemon_data["count"] %> different pokemons in the world.</h3>
+
+<% @pokemon.each do |current_pokemon| %>
+  <p><%= current_pokemon['name'] %></p>
+<% end %>
+
+<%= @pokemon %>
